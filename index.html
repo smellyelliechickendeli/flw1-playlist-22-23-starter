@@ -12,8 +12,29 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
   </head>
 
+
+  <div class="zoom">
+      <button class="shrink"><b>-</b></button>
+      <button class="grande"><b>+</b></button>
+  </div>
+
+
   <body>
-    <h1>My Playlist</h1>
+    <h1 style="color:rgb(255, 133, 245);">build your playlist</h1>
+    <h4 class="mood" style="margin-bottom: 2%; color: rgb(255, 255, 255);">
+      what mood are you in?</h4>
+
+    <div class="which-mood">  
+      <button class="monkey">monkey</button>
+      <button class="tuff-guy">tuff guy 🥶</button>
+      <button class="cutesie">cutesie</button>
+    </div>
+    
+    
+
+    <!--
+
+    INPUT FOR SONGS (MAYBE FOR LATER)
     <div class="form">
       <p>Add a new song:</p>
       <input placeholder="Song Title" class="title" />
@@ -22,13 +43,105 @@
       <input placeholder="Song Link Address" class="link" />
       <button class="add-input">Add</button>
     </div>
-    <div class="display">
-      <div class="column images"></div>
-      <div class="column songs"></div>
-      <div class="column artists"></div>
-      <div class="column lengths"></div>
-      <div class="column links"></div>
+    -->
+
+    <div class="title-and-everything">
+
+      <div class="words">
+        <div class="title-input">
+            <span class="play-name" style="font-size: 50px; margin-left:3%;" >
+            george's playlist
+            </span>   
+        </div>
+      </div>
+
+      <img class="big-play-button" src="photos/bigplay.png" alt="playlist play button" width="auto" height="65px" style="margin-inline: 3%; margin-bottom: 2%;">
+
     </div>
+
+
+    <div class="first-display">
+
+      <div class="column links">
+        <img src="photos/play.png" alt="song play button">
+      </div>
+
+      <div class="column images">
+        <img src="photos/george2.png" alt="album image" id="album-image">
+      </div>
+
+      <div class="column songs">
+        <p id="song-title">Life Less Ordinary</p>
+      </div>
+
+      <div class="column artists">
+        <p id="audio-artists">Carbon Leaf</p>
+      </div>
+       
+      <div class="column lengths">
+          <p id="how-long">3:35</p>
+        </div>
+    </div>
+
+
+
+    <div class="seco-display">
+        <!--no need to touch-->
+        <div class="column links">
+          <img src="photos/play.png" alt="song play button">
+        </div>
+
+        <div class="column images">
+          <img src="photos/george2.png" alt="album image" id="album2-image">
+        </div>
+
+        <div class="column songs">
+          <p id="song2-title">California Sun</p>
+        </div>
+
+        <div class="column artists">
+          <p id="audio2-artists">Brian Wilson</p>
+        </div>
+
+        <div class="column lengths">
+          <p id="how2-long">3:05</p>
+        </div>
+       
+    </div>
+
+    <div class="thi-display">
+        <!--no need to touch-->
+        <div class="column links">
+          <img src="photos/play.png" alt="song play button">
+        </div>
+
+        <div class="column images">
+          <img src="photos/george2.png" alt="album image" id="album3-image">
+        </div>
+
+        <div class="column songs">
+          <p id="song3-title">The Friendship Song</p>
+        </div>
+
+        <div class="column artists">
+          <p id="audio3-artists">Carbon Leaf</p>
+        </div>
+
+        <div class="column lengths">
+          <p id="how3-long">2:33</p>
+        </div>
+       
+    </div>
+
+
+    <div class="unadded-songs">
+
+
+
+    </div>
+
+
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Your Javascript -->
