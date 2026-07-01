@@ -1,5 +1,7 @@
 // Complete Day 1 goals here
 
+
+
 //styles
 let monkey = document.querySelector('.monkey');
 let tuffGuy = document.querySelector('.tuff-guy');
@@ -36,6 +38,38 @@ let diffArtists3 = ['Carbon Leaf', 'Skrilla', 'Wasia Project']
 let diffDur = ['3:35', '2:52', '3:34'];
 let diffDur2 = ['3:05', '3:16', '5:07'];
 let diffDur3 = ['2:33', '2:30', '4:30'];
+
+//musiiic
+let summertime = new Audio('audio/01 Summertime.mp3');
+let universe = new Audio('audio/Across the Universe.mp3');
+let california = new Audio('audio/California Sun (Bonus Track).mp3');
+let beingReal = new Audio('audio/If We Being Real [Official Audio].mp3');
+let lessOrdinary = new Audio('audio/Life Less Ordinary.mp3');
+let boxRicch = new Audio('audio/Roddy Ricch - The Box [Official Audio].mp3');
+let dootSever = new Audio('audio/Skrilla - Doot Doot (Official Audio).mp3');
+let friendshipSong = new Audio('audio/The Friendship Song.mp3');
+let wasiaImp = new Audio('audio/Wasia Project - impossible (Official Audio).mp3');
+let isPlaying = true;
+
+    document.getElementById('go1').addEventListener('click', function(){
+      if (document.getElementById('song-title').innerHTML === diffSongs1[0]){
+          lessOrdinary.play();
+          document.getElementById('go1').src = 'photos/pause.png';
+      } else if (document.getElementById('song-title').innerHTML === diffSongs1[1]){
+          beingReal.play();
+          document.getElementById('go1').src = 'photos/pause.png';
+      } else if (document.getElementById('song-title').innerHTML === diffSongs1[2]){
+          summertime.play();
+          document.getElementById('go1').src = 'photos/pause.png';
+      } else if (document.getElementById('go1').src === 'photos/pause.png') {
+          summertime.pause();
+          lessOrdinary.pause();
+          beingReal.pause();
+          document.getElementById('go1').src = 'photos/play.png';
+      };
+        
+     
+});
 
 //styles clicked 
 monkey.addEventListener('click',
@@ -110,6 +144,8 @@ titleInput.addEventListener('dblclick', () => {
   let putIn = document.createElement('input');
   putIn.value = playName.textContent;
   playName.textContent = '';
+  putIn.style.color='black';
+  putIn.style.fontSize='44px';
   titleInput.appendChild(putIn);
   putIn.focus();
   putIn.select();
